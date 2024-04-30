@@ -63,7 +63,29 @@ def edit_contact():
     else:
         print(f"No contact found with name '{name}'")
 
+# Function to delete contact
+def delete_contact():
+    name = input("Enter name to delete: ")
+    cursor.execute("SELECT * FROM contacts WHERE first_name = ? OR last_name = ?", (name, name))
+    contacts = cursor.fetchall()
 
+    if contacts:
+        for contact in contacts:
+            print("\nContact details:")
+            print(f"First name: {contact[1]}")
+            print(f"Last name: {contact[2]}")
+            print(f"Mobile number: {contact[3]}")
+            print(f"Email address: {contact[4]}")
+            print(f"Address: {contact[5]}")
+
+        confirm = input("Are you sure you want to delete this contact? (y/n): ")
+
+        if confirm == "y":
+            cursor.execute("DELETE FROM contacts WHERE first_name = ? OR last_name = ?", (name, name))
+            connection.commit()
+            print(f"Contact '{name}' deleted successfully")
+    else:
+        print(f"No contact found with name '{name}'")
 # Address Book Name
 print("My Address Book")
 
