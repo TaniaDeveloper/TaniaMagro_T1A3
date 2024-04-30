@@ -96,6 +96,7 @@ mobile_number = input("Mobile number = ")
 email_address = input("Email address = ")
 address = input("Address = ")
 
+# Main finction to run the program
 def main():
     initialize_database()
 
@@ -107,7 +108,7 @@ def main():
         print("4. Delete Contact")
         print("5. Exit")
 
-        choice = input("Enter your choice (1-4): ")
+        choice = input("Enter your choice (1-5): ")
 
         if choice == "1":
             add_contact()
@@ -118,6 +119,10 @@ def main():
         elif choice == "4":
             delete_contact()
         elif choice == "5":
+            print("Exiting Address Book.")
             break
         else:
-            print("Invalid choice")
+            print("Invalid choice, please try again.")
+
+if __name__ == "__main__":
+    main()
