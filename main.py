@@ -1,5 +1,12 @@
 # Address book application
 
+# Connect to Database
+
+def intialize_database():
+    cursor.execute("CREATE TABLE IF NOT EXISTS contacts (id INTEGER PRIMARY KEY, first_name TEXT, last_name TEXT, mobile_number TEXT, email_address TEXT, address TEXT)")
+
+
+
 # Address Book Name
 print("My Address Book")
 
