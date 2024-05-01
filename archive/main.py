@@ -86,43 +86,4 @@ def delete_contact():
             print(f"Contact '{name}' deleted successfully")
     else:
         print(f"No contact found with name '{name}'")
-# Address Book Name
-print("My Address Book")
 
-# Address book input
-first_name = input("First name = ")
-last_name = input("Last name = ")
-mobile_number = input("Mobile number = ")
-email_address = input("Email address = ")
-address = input("Address = ")
-
-# Main finction to run the program
-def main():
-    initialize_database()
-
-    while True:
-        print("\nAddress Book List:")
-        print("1. Add Contact")
-        print("2. Search Contacts")
-        print("3. Update Contact")
-        print("4. Delete Contact")
-        print("5. Exit")
-
-        choice = input("Enter your choice (1-5): ")
-
-        if choice == "1":
-            add_contact()
-        elif choice == "2":
-            search_contact()
-        elif choice == "3":
-            update_contact()
-        elif choice == "4":
-            delete_contact()
-        elif choice == "5":
-            print("Exiting Address Book.")
-            break
-        else:
-            print("Invalid choice, please try again.")
-
-if __name__ == "__main__":
-    main()
