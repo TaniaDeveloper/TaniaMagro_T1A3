@@ -1,6 +1,8 @@
+import os.path
+
 # Creating the menu for the Task List
 
-from tasklist_functions import create_task_list, add_task, edit_task, view_tasks, delete_task, delete_task_list
+from tasklist_functions import create_task_list, create_add_task, create_edit_task, create_view_tasks, create_delete_task, create_delete_task_list
 
 print("Plan Your Life | Task List")
 
@@ -17,23 +19,25 @@ def create_menu():
     print(create_menu())
     return user_choice
 
-choice = ""
+file_name = "list.csv"
 
+choice = ""
+# menu options
 while choice != "7":
     choice = create_menu()
 
     if (choice == "1"):
         create_task_list()
     elif (choice =="2"):
-        add_task()
+        create_add_task()
     elif (choice =="3"):
-        edit_task()
+        create_edit_task()
     elif (choice =="4"):
-        view_tasks()    
+        create_view_tasks()    
     elif (choice =="5"):
-        delete_task()
+        create_delete_task()
     elif (choice =="6"):
-        delete_task_list()
+        create_delete_task_list()
     elif (choice =="7"):
         print("Exiting Plan Your Life | Task List.")    
         break
