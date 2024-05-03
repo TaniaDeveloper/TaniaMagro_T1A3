@@ -1,5 +1,7 @@
 # Creating the menu for the Task List
 
+from tasklist_functions import create_task_list, add_task_list, edit_task_list, view_list, delete_task, delete_list
+
 print("Plan Your Life | Task List")
 
 def create_menu():
