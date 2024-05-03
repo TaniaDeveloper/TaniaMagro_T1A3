@@ -1,6 +1,6 @@
 # Creating the menu for the Task List
 
-from tasklist_functions import create_task_list, add_task_list, edit_task_list, view_list, delete_task, delete_list
+from tasklist_functions import create_task_list, add_task, edit_task, view_tasks, delete_task, delete_task_list
 
 print("Plan Your Life | Task List")
 
@@ -23,19 +23,20 @@ while choice != "7":
     choice = create_menu()
 
     if (choice == "1"):
-        print("Entered 1.")
+        create_task_list()
     elif (choice =="2"):
-        print("Entered 2.")
+        add_task()
     elif (choice =="3"):
-        print("Entered 3.")
+        edit_task()
     elif (choice =="4"):
-        print("Entered 4.")    
+        view_tasks()    
     elif (choice =="5"):
-        print("Entered 5.")
+        delete_task()
     elif (choice =="6"):
-        print("Entered 6.")
+        delete_task_list()
     elif (choice =="7"):
-        print("Entered 7.")    
+        print("Exiting Plan Your Life | Task List.")    
+        break
     else:
         print("Invalid option. Please select between 1-7.")
 
