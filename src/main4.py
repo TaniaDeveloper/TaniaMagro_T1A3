@@ -2,9 +2,18 @@ tasks = []
 
 # creating add task function
 def addTask():
-    task = input ("Please enter a task: ")
+    task = input ("Please enter a task: ")         
     tasks.append(task)
-    print(f"Task {task} added to the list.")
+    print(f"Task '{task}' added to the list.")
+
+# creating delete task function
+def deleteTask():
+    listTasks()
+    try:
+
+    except:
+        print("Invalid option.")
+
 
 if __name__ == "__main__":
 # Create a loop to run the application
