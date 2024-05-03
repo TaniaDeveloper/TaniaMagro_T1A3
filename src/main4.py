@@ -1,3 +1,5 @@
+
+
 tasks = []
 
 # creating add task function
@@ -31,7 +33,7 @@ def deleteTask():
 
 if __name__ == "__main__":
 # Create a loop to run the application
-    print ("Welcome to your task list")
+    print ("Plan Your Life - Task List")
     while True:
         print("\n")
         print("Please select one of the following options")
