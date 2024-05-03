@@ -1,7 +1,9 @@
+# Python packages - will already be installed within Python
 import os.path
 
 # Creating the menu for the Task List
 
+# Imports of the terminal application
 from tasklist_functions import create_task_list, create_add_task, create_edit_task, create_view_tasks, create_delete_task, create_delete_task_list
 
 print("Plan Your Life | Task List")
@@ -20,6 +22,12 @@ def create_menu():
     return user_choice
 
 file_name = "list.csv"
+
+# create the file ifn it doesn't exist - need to test as I have this as option 1. Hopefully both dont count the other out.
+if (not os.path.isfile(file_name))
+    # Create the file (or list)
+    tasklist = open(file_name, "w")
+    tasklist.write("task_name, task_status")
 
 choice = ""
 # menu options
