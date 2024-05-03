@@ -10,10 +10,14 @@ def addTask():
 def deleteTask():
     listTasks()
     try:
-
+        taskToDelete - int(input("Enter the # to delete: "))
+        if taskToDelete >=0 and taskToDelete < len(tasks):
+            tasks.pop(tasksToDelete)
+            print(f"Task {taskToDelete} has been removed")
+        else:
+            print(f"Task #{taskToDelete} was not found.")
     except:
         print("Invalid option.")
-
 
 if __name__ == "__main__":
 # Create a loop to run the application
