@@ -16,6 +16,9 @@ Reference the style guide that has been used through the program development
 #### System Requirements:
 * Python 3.9.6 or higher
 
+#### Installation:
+* Clone the repository:
+
 
 
                             
