@@ -23,11 +23,15 @@ def create_menu():
 
 file_name = "list.csv"
 
-# create the file ifn it doesn't exist - need to test as I have this as option 1. Hopefully both dont count the other out.
-if (not os.path.isfile(file_name))
+# create the file if it doesn't exist - need to test as I have this as option 1. Hopefully both dont count the other out.
+if (not os.path.isfile(file_name)):
+    print("Creating file as it doesn't exist")
     # Create the file (or list)
     tasklist = open(file_name, "w")
-    tasklist.write("task_name, task_status")
+    # headings in the file
+    tasklist.write("Task, Status")
+    # closing the file
+    tasklist.close()
 
 choice = ""
 # menu options
@@ -35,17 +39,17 @@ while choice != "7":
     choice = create_menu()
 
     if (choice == "1"):
-        create_task_list()
+        create_task_list(file_name)
     elif (choice =="2"):
-        create_add_task()
+        create_add_task(file_name)
     elif (choice =="3"):
-        create_edit_task()
+        create_edit_task(file_name)
     elif (choice =="4"):
-        create_view_tasks()    
+        create_view_tasks(file_name)    
     elif (choice =="5"):
-        create_delete_task()
+        create_delete_task(file_name)
     elif (choice =="6"):
-        create_delete_task_list()
+        create_delete_task_list(file_name)
     elif (choice =="7"):
         print("Exiting Plan Your Life | Task List.")    
         break
