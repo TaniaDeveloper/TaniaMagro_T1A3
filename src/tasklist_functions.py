@@ -9,7 +9,8 @@ def create_task_list(file_name):
         writer = csv.writer(f)
         writer.writerow(["Task", "Status"])
 
-# creating add task
+
+# Adding a task to a list
 def create_add_task(file_name):
     list_name = input("Enter the name of the Task List: ")
     file_name = list_name.lower().replace(" ", "_") + ".csv"
@@ -19,7 +20,7 @@ def create_add_task(file_name):
         writer.writerow([task_name, "Pending"])
     
 
-# function to edit task
+# retrieving the list to edit a task
 def create_edit_task(file_name):
     list_name = input("Enter the name of the task list:")
     file_name = list_name.lower().replace(" ", "_") + ".csv"
@@ -51,7 +52,7 @@ def create_view_tasks(file_name):
             print(f"{row[0]} - Status: {row[1]}")
 
 
-# creating delete tasks
+# Deleting tasks from a specified list
 def create_delete_task(file_name):
     list_name = input("Enter the name of the task list: ")
     file_name = list_name.lower().replace(" ", "_") + ".csv"
@@ -69,7 +70,7 @@ def create_delete_task(file_name):
             writer.writerow(task)
 
 
-# creating delete tasks list
+# Deleting lists
 def create_delete_task_list(file_name):
     list_name = input("Enter the name of the task list: ")
     file_name = list_name.lower().replace(" ", "_") + ".csv"
