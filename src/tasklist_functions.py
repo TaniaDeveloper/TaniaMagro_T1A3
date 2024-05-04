@@ -12,7 +12,7 @@ def create_task_list(file_name):
 # creating add task
 def create_add_task():
     list_name = input("Enter the name of the Task List: ")
-    file_name = list_name.lower()replace(" ", "_") + ".csv"
+    file_name = list_name.lower().replace(" ", "_") + ".csv"
     task_name = input("Add the task to your list: ")
     with open(file_name, 'a', newline='') as file:
         writer = csv.writer(file)
@@ -20,8 +20,26 @@ def create_add_task():
     
 
 # function to edit task
-def create_edit_task():
+def create_edit_task(file_name):
+    list_name = input("Enter the name of the task list:")
+    file_name = list_name.lower().replace(" ", "_") + ".csv"
+    task_name = input("Enter the task to edit: ")
+    new_status = input("Enter the new status: ")
     print("edit_task")
+
+
+    # Read and updated a specified task
+    tasks = []
+    with open(file_name, 'r', newline= '') as file:
+        reader = csv.reader(file)
+        tasks = [row for row in reader]
+    with open(file_name, 'w', newline='') as file:
+        writer = csv.writer(file)
+        for task in tasks:
+            if task[0] == task_name:
+                task[1] = new_status
+            writer.writerow(task)
+    
 
 
 # function to view tasks in a list
