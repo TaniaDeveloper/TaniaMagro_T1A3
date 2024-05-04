@@ -41,12 +41,14 @@ def create_edit_task(file_name):
             writer.writerow(task)
     
 
-
 # function to view tasks in a list
 def create_view_tasks(file_name):
     list_name = input("Enter the name of the task list: ")
-    
-    print("view_tasks")
+    file_name = list_name.lower().replace(" ", "_") + ".csv"
+    with open(file_name, 'r', newline='') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            print(f"{row[0]} - Status: {row[1]})
 
 
 # creating delete tasks
@@ -55,6 +57,13 @@ def create_delete_task():
 
 
 # creating delete tasks list
-def create_delete_task_list():
-    print("delete_task_list")
+def create_delete_task_list(file_name):
+    list_name = input("Enter the name of the task list: ")
+    file_name = list_name.lower().replace(" ", "_") + ".csv"
+    if os.path.exists(file_name):
+        os.remove(file_name)
+        print(f"Task list '{list_name}' has been deleted.")
+    else:
+        print("Task list not found.")
+
 
