@@ -1,3 +1,8 @@
 Task,Status
 Buy Milk,Pending
 Bread,Completed
+
+
+print(f"{Fore.magenta}💻 Plan Your Life | Task List 💻{Style.reset}")
+
+print(f"{Style.bold}{Fore.magenta}💻 Plan Your Life | Task List 💻{Style.reset}")
