@@ -18,7 +18,6 @@ def create_menu():
     print("7. Exit")
 
     user_choice = input("Enter your selection (1-7): ")
-    print(create_menu())
     return user_choice
 
 file_name = "list.csv"

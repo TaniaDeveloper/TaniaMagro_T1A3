@@ -3,14 +3,14 @@ import csv
 # creating the task list
 
 def create_task_list(file_name):
-    list_name = input("Create your new list")           # Should this be called list_name or Todo_name???
-    file_name = list_name.lower().replaced(" ", "_") + ".csv"
-    with open(file_name, 'w', newline=) as f:
+    list_name = input("Create your new list: ")           
+    file_name = list_name.lower().replace(" ", "_") + ".csv"
+    with open(file_name, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(["Task", "Status"])
 
 # creating add task
-def create_add_task():
+def create_add_task(file_name):
     list_name = input("Enter the name of the Task List: ")
     file_name = list_name.lower().replace(" ", "_") + ".csv"
     task_name = input("Add the task to your list: ")
@@ -29,7 +29,7 @@ def create_edit_task(file_name):
 
 
     # Read and update a specified task
-    tasks = []
+    tasks = [file_name]
     with open(file_name, 'r', newline= '') as file:
         reader = csv.reader(file)
         tasks = [row for row in reader]
@@ -48,17 +48,17 @@ def create_view_tasks(file_name):
     with open(file_name, 'r', newline='') as file:
         reader = csv.reader(file)
         for row in reader:
-            print(f"{row[0]} - Status: {row[1]})
+            print(f"{row[0]} - Status: {row[1]}")
 
 
 # creating delete tasks
-def create_delete_task():
+def create_delete_task(file_name):
     list_name = input("Enter the name of the task list: ")
     file_name = list_name.lower().replace(" ", "_") + ".csv"
     task_name = input("Enter the task to delete:")
 
     # Read and delete a specified task
-    tasks = []
+    tasks = [file_name]
     with open(file_name, 'r', newline='') as file:
         reader = csv.reader(file)
         tasks = [row for row in reader if row[0] != task_name]
