@@ -12,5 +12,10 @@ Reference the style guide that has been used through the program development
 
 ### Project Plan
 
+### Instructions to Access the Terminal Application
+#### System Requirements:
+* Python 3.9.6 or higher
+
+
 
                             
