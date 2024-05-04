@@ -28,7 +28,7 @@ def create_edit_task(file_name):
     print("edit_task")
 
 
-    # Read and updated a specified task
+    # Read and update a specified task
     tasks = []
     with open(file_name, 'r', newline= '') as file:
         reader = csv.reader(file)
@@ -53,7 +53,20 @@ def create_view_tasks(file_name):
 
 # creating delete tasks
 def create_delete_task():
-    print("delete_task")
+    list_name = input("Enter the name of the task list: ")
+    file_name = list_name.lower().replace(" ", "_") + ".csv"
+    task_name = input("Enter the task to delete:")
+
+    # Read and delete a specified task
+    tasks = []
+    with open(file_name, 'r', newline='') as file:
+        reader = csv.reader(file)
+        tasks = [row for row in reader if row[0] != task_name]
+
+    with open(file_name, 'w', newline='') as file:
+        writer = csv.writer(file)
+        for task in tasks:
+            writer.writerow(task)
 
 
 # creating delete tasks list
