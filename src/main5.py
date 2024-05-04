@@ -1,12 +1,15 @@
 # Python packages - will already be installed within Python
 import os.path
 
+# External packages to be installed
+from colored import Fore, Back, Style
+
 # Creating the menu for the Task List
 
 # Imports of the terminal application
 from tasklist_functions import create_task_list, create_add_task, create_edit_task, create_view_tasks, create_delete_task, create_delete_task_list
 
-print("Plan Your Life | Task List")
+print(f"{Style.bold}{Fore.magenta}💻 Plan Your Life | Task List 💻{Style.reset}")
 
 def create_menu():
     print("1. Create a List")
@@ -55,4 +58,4 @@ while choice != "7":
     else:
         print("Invalid option. Please select between 1-7.")
 
-print("Thank you and have a great day")
+print(f"{Style.bold}{Fore.light_magenta}👋 Thank you and have a great day 👋")
