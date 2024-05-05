@@ -32,13 +32,16 @@ I had deadlines for action items, and created a checklist for grouped tasks. I a
 ![Working on tasks](./docs/Working%20on%20tasks.png)
 
 Terminal Application Ideas
+
 ![Terminal application ideas](./docs/Terminal%20application%20ideas.png)
+
+Checklist of grouped items
 
 ![Checklist](./docs/Checklist.png)
 
 **Testing the terminal for each menu selection**
 
-I also had progressed with completing some of the tasks, that were on my action board. I had utilised placing dates for when bcertaonn items were due to be completed, however not all tasks were completed within the alloted time frame.
+I also had progressed with completing some of the tasks, that were on my action board. I had utilised placing dates for when certain items were due to be completed, however not all tasks were completed within the alloted time frame.
 
 ![Testing terminal](./docs/Testing%20terminal.png)
 
