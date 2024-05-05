@@ -22,6 +22,8 @@ For instructions on how to access the terminal and the Help of FAQs please click
 
 For a full description of each feature within the terminal, click the link.
 
+[Feature breakdown:](./docs/Feature%20Breakdown.pdf)
+
 ## Project Plan
 
 I utilised Trello and created a kanban board, and listed all the items that I needed to complete.
