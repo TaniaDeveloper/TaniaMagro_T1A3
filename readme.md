@@ -15,13 +15,15 @@ I utilised the PEP 8 style guide while developing my Terminal Application: Task 
 
 ### Develop a list of features that will be included in the application
 
-There are seven options to the from the Task List menu:
+There are seven options to select from the Task List menu:
 
 ![Menu](./docs/main_menu.png)
 
 **1. Create a List**
 
-### Project Plan
+## Project Plan
+
+
 
 ### Instructions to Access the Terminal Application
 #### System Requirements:
@@ -37,6 +39,8 @@ Follow the the instructions below to install the Task List Terminal Application:
 3. cd src
 4. chmod +x run.sh
 5. ./run.sh
+
+
 
 ### How to use 💻 Plan Your Life | Task List 💻
 
