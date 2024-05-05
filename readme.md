@@ -16,7 +16,7 @@ I utilised the PEP 8 style guide while developing my Terminal Application: Task 
 ### Instructions to Access the Terminal Application
 For instructions on how to access the terminal and the Help of FAQs please click the link for the Help Documentation.
 
-[Help Documentation:](./docs/instructions_and_help.md)
+[Help Documentation:](./docs/Instructions_and_help.md)
 
 ### How to use 💻 Plan Your Life | Task List 💻
 
