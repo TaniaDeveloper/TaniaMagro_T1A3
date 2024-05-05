@@ -13,38 +13,46 @@ I utilised the PEP 8 style guide while developing my Terminal Application: Task 
 
 ## Terminal Application
 
-### Develop a list of features that will be included in the application
-
-There are seven options to select from the Task List menu:
-
-![Menu](./docs/main_menu.png)
-
-**1. Create a List**
-
-## Project Plan
-
-
-
 ### Instructions to Access the Terminal Application
-#### System Requirements:
-* Python3 needs to be installed. Version 3.9.6 or higher is required
-* .venv will also be required 
+For instructions on how to access the terminal and the Help of FAQs please click the link for the Help Documentation.
 
-Follow the the instructions below to install the Task List Terminal Application:
-
-1. Clone the Git repository (only select one option:)
-    1. SSH: git clone git@github.com:TaniaDeveloper/TaniaMagro_T1A3.git
-    2. HTTPS: https://github.com/TaniaDeveloper/TaniaMagro_T1A3.git
-2. cd TaniaMagro_T1A3
-3. cd src
-4. chmod +x run.sh
-5. ./run.sh
-
-
+[Help Documentation:](./docs/instructions_and_help.md)
 
 ### How to use 💻 Plan Your Life | Task List 💻
 
-Yu can
+For a full description of each feature within the terminal, click the link.
+
+## Project Plan
+
+I utilised Trello and created a kanban board, and listed all the items that I needed to complete.
+
+**Working on tasks**
+
+I had deadlines for action items, and created a checklist for grouped tasks. I also included brainstorm ideas or links to videos that I watched for reasrech purposes.
+![Working on tasks](./docs/Working%20on%20tasks.png)
+
+Terminal Application Ideas
+![Terminal application ideas](./docs/Terminal%20application%20ideas.png)
+
+![Checklist](./docs/Checklist.png)
+
+**Testing the terminal for each menu selection**
+
+I also had progressed with completing some of the tasks, that were on my action board. I had utilised placing dates for when bcertaonn items were due to be completed, however not all tasks were completed within the alloted time frame.
+
+![Testing terminal](./docs/Testing%20terminal.png)
+
+**All tasks completed**
+
+All tasks have now been completed for the terminal application.
+
+I enjoyed using Trello, within the environment I have created. Have previously used Jira within my organisation however now utilise Microsoft Project (Web), which is moving into Planner. Each of the systems have their strengths and weakneses, and it has been great to be able to use different sytems for different context.
+
+![All completed](./docs/All%20completed.png)
+
+
+
+
 
 
 ## References
